@@ -14,10 +14,10 @@ export const romanToInt = (s) => {
     return mapOfValues.get(s);
   }
 
-  let total = 0;
-  let subTotal = mapOfValues.get(s[0]);
-  let currentValue = 0;
   let previousValue = mapOfValues.get(s[0]);
+  let subTotal = mapOfValues.get(s[0]);
+  let total = 0;
+  let currentValue = 0;
 
   for (let i = 1; i < s.length; i++) {
     currentValue = mapOfValues.get(s[i]);
